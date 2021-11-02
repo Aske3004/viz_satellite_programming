@@ -4,7 +4,6 @@ class Satellite {
   String satLink,satName;
   int satId, NORAD;
   long time;
-  
 
   Satellite(int NORAD,int satId) {
     this.satId=satId;
@@ -46,7 +45,6 @@ class Satellite {
     pushMatrix();
     translate(position.x,position.y,position.z);
     rotate(angleBetween, rAxis.x, rAxis.y, rAxis.z);
-    //rotate(angleBetween, rAxis.x, rAxis.y, rAxis.z);
     if(currentSatellite==satId) fill(255,255,0);
     else fill(255);
     box(5);

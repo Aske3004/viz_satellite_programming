@@ -13,7 +13,6 @@ void changeSatellite() {
       } else if (keyCode == RIGHT) {
         currentSatellite++;
       }
-      
     }
     value=255;
   }
@@ -33,7 +32,6 @@ void changeSatellite() {
   else if(currentSatellite==8)satelliteName=sat8.satName;
   else if(currentSatellite==9)satelliteName=sat9.satName;
   else if(currentSatellite==10)satelliteName=sat10.satName;
-  
   fill(255);
   textSize(35);
   text("The current satellite is: "+satelliteName,10,height-25);

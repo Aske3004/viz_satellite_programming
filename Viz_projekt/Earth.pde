@@ -16,11 +16,9 @@ class Earth {
   }
 
   void update() {
-    //pushMatrix();
     translate(width/2, height/2);
     rotateY(earthRotate);
     shape(globe);
-    //popMatrix();
     earthRotate += rotationSpeed;
     fill(200);
     noStroke(); 
