@@ -5,7 +5,7 @@ String satelliteName;
 void changeSatellite() {
   if (value==0) {
     if (key == ' '){
-        runUpdatePosition();
+        updateSatellitePositions();
       }
     else if (key == CODED) {
       if (keyCode == LEFT) {

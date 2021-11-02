@@ -28,7 +28,7 @@ class Satellite {
 
     //spheric to cartesian coordinates
     float theta = radians(satLat);
-    float phi = radians(satLon)+PI; //<>//
+    float phi = radians(satLon)+PI;
 
     float x = radius * cos(theta) * cos(phi);
     float y = -radius * sin(theta);
@@ -38,7 +38,7 @@ class Satellite {
     angleBetween = PVector.angleBetween(xaxis,position);
 
     //axis satellite rotates around
-    rAxis = xaxis.cross(position); //<>//
+    rAxis = xaxis.cross(position);
 }
 
   void update() {
@@ -85,17 +85,4 @@ class Satellite {
     //axis satellite rotates around
     rAxis = xaxis.cross(position);
   }
-}
-
-void runUpdatePosition(){
-  sat1.updatePosition();
-  sat2.updatePosition();
-  sat3.updatePosition();
-  sat4.updatePosition();
-  sat5.updatePosition();
-  sat6.updatePosition();
-  sat7.updatePosition();
-  sat8.updatePosition();
-  sat9.updatePosition();
-  sat10.updatePosition();
 }
