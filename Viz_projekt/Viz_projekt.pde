@@ -1,5 +1,5 @@
 //Switch between the selected satellite with RIGHTARROW and LEFTARROW
-//1 second run in our program is equivalent to 10 minutes in real life
+//Update the satellites positions with SPACEBAR
 
 import java.util.Date;
 Earth earth;

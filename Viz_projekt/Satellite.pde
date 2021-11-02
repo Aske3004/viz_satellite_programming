@@ -1,6 +1,6 @@
 class Satellite {
   PVector rAxis, position, xaxis;
-  float speed, rotateAngle, radius, angleBetween;
+  float rotateAngle, radius, angleBetween;
   String satLink,satName;
   int satId, NORAD;
   long time;
