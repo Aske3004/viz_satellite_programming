@@ -29,10 +29,7 @@ class Satellite {
     float theta = radians(satLat);
     float phi = radians(satLon)+PI;
 
-    float x = radius * cos(theta) * cos(phi);
-    float y = -radius * sin(theta);
-    float z = -radius * cos(theta) * sin(phi);
-    position = new PVector(x, y, z);
+    position = new PVector(radius * cos(theta) * cos(phi), -radius * sin(theta), -radius * cos(theta) * sin(phi));
     xaxis = new PVector(1,0,0);
     angleBetween = PVector.angleBetween(xaxis,position);
 
@@ -73,10 +70,7 @@ class Satellite {
     float theta = radians(satLat);
     float phi = radians(satLon)+PI;
 
-    float x = radius * cos(theta) * cos(phi);
-    float y = -radius * sin(theta);
-    float z = -radius * cos(theta) * sin(phi);
-    position = new PVector(x, y, z);
+    position = new PVector(radius * cos(theta) * cos(phi), -radius * sin(theta), -radius * cos(theta) * sin(phi));
     xaxis = new PVector(1,0,0);
     angleBetween = PVector.angleBetween(xaxis,position);
 
